@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  habit: MyString
+  good_days: 1
+  bad_days: 1
+
+two:
+  habit: MyString
+  good_days: 1
+  bad_days: 1
