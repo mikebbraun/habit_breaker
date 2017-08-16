@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>Habit</th>
-      <th>Good days</th>
-      <th>Bad days</th>
+      <!-- <th>Good days</th>
+      <th>Bad days</th> -->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,8 +16,8 @@
     <% @habits.each do |habit| %>
       <tr>
         <td><%= habit.habit %></td>
-        <td><%= habit.good_days %></td>
-        <td><%= habit.bad_days %></td>
+        <!-- <td><%= habit.good_days %></td>
+        <td><%= habit.bad_days %></td> -->
         <td><%= link_to 'Show', habit %></td>
         <td><%= link_to 'Edit', edit_habit_path(habit) %></td>
         <td><%= link_to 'Destroy', habit, method: :delete, data: { confirm: 'Are you sure?' } %></td>

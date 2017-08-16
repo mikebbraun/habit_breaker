@@ -12,11 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :habit %>
+    <!-- <%= form.label :habit %> -->
     <%= form.text_field :habit, id: :habit_habit %>
   </div>
 
-  <div class="field">
+  <!-- <div class="field">
     <%= form.label :good_days %>
     <%= form.number_field :good_days, id: :habit_good_days %>
   </div>
@@ -24,9 +24,9 @@
   <div class="field">
     <%= form.label :bad_days %>
     <%= form.number_field :bad_days, id: :habit_bad_days %>
-  </div>
+  </div> -->
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Add" %>
   </div>
 <% end %>

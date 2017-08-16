@@ -28,8 +28,8 @@ class HabitsController < ApplicationController
 
     respond_to do |format|
       if @habit.save
-        format.html { redirect_to @habit, notice: 'Habit was successfully created.' }
-        format.json { render :show, status: :created, location: @habit }
+        format.html { redirect_to habits_url, notice: 'Habit was successfully created.' }
+        format.json { render :index, status: :created, location: @habit }
       else
         format.html { render :new }
         format.json { render json: @habit.errors, status: :unprocessable_entity }
@@ -42,8 +42,8 @@ class HabitsController < ApplicationController
   def update
     respond_to do |format|
       if @habit.update(habit_params)
-        format.html { redirect_to @habit, notice: 'Habit was successfully updated.' }
-        format.json { render :show, status: :ok, location: @habit }
+        format.html { redirect_to habits_url, notice: 'Habit was successfully updated.' }
+        format.json { render :index, status: :ok, location: @habit }
       else
         format.html { render :edit }
         format.json { render json: @habit.errors, status: :unprocessable_entity }
